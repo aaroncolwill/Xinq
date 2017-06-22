@@ -2,7 +2,7 @@
 
 ## Xinq - lightweight JS prototype extensions
 Xinq gives you minimal impact javascript extensions similar to those seen in the C# ```System.Linq``` namespace.
-Using Xinq can enable you to sort through data sets and filter specific results. Statements can be deferred in the same way as Linq and the sytax is similar.
+Using Xinq can enable you to sort through data sets and filter specific results. Statements can be deferred in the same way as Linq and the syntax is similar.
 
 ## Usage Examples
 
