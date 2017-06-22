@@ -1,0 +1,16 @@
+{
+  "name": "xinq",
+  "version": "0.0.1",
+  "description": "Xinq primitive prototype extensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "qunit"
+  },
+  "keywords": [
+    "xinq",
+    "linq",
+    "extensions"
+  ],
+  "author": "Aaron Colwill",
+  "license": "MIT"
+}
