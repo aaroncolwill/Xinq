@@ -14,8 +14,8 @@ String.prototype.isEmpty = function() {
 /**
  *  Return bool if string contains other string
  */
-String.prototype.contains = function(predicate) {
-    if(this.indexOf(predicate) != -1) return true;
+String.prototype.contains = function(match) {
+    if(this.indexOf(match) != -1) return true;
     else return false;
 }
 
