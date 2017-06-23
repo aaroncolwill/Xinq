@@ -19,7 +19,7 @@ var xinq = require('xinq').init(); // must call init
 
 ## Usage Examples
 
-Checking to see if a string contains another string
+Checking to see if a string contains another string [LIVE DEMO](https://runkit.com/embed/cz38dbofm88p)
 
 ``` js
 var xinq = require("xinq").init(); // must call init
@@ -27,7 +27,7 @@ var teststring = "this string allows testing of contains";
 var result = teststring.contains("allows");
 ```
 
-Selecting results of an array that match a predicate
+Selecting results of an array that match a predicate [LIVE DEMO](https://runkit.com/embed/uv7z7ma5z43y)
 
 ``` js
 var xinq = require("xinq").init(); // must call init
@@ -36,7 +36,7 @@ var result = stuff.select((n) => n.contains("ouse"));
 ```
 
 Selecting and filtering results of an object array where 
-predicate is satisfied.
+predicate is satisfied. [LIVE DEMO](https://runkit.com/embed/6z5450kbribk)
 
 ``` js
 var xinq = require("xinq").init(); // must call init
