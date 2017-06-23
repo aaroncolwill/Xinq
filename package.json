@@ -1,6 +1,6 @@
 {
   "name": "xinq",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Xinq primitive prototype extensions",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,13 @@
     "linq",
     "extensions"
   ],
-  "author": "Aaron Colwill",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aaroncolwill/xinq.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aaroncolwill/xinq/issues"
+  },
+  "author": "Aaron Colwill <git@aaroncolwill.com> (http://github.com/aaroncolwill)",
   "license": "MIT"
 }

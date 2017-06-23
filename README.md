@@ -1,12 +1,25 @@
 [![logo](http://aaroncolwill.com/external/xinq-logo.png?)]()
 
 ## Xinq - lightweight JS prototype extensions
+
 Xinq gives you minimal impact javascript extensions similar to those seen in the C# ```System.Linq``` namespace.
 Using Xinq can enable you to sort through data sets and filter specific results. Statements can be deferred in the same way as Linq and the syntax is similar.
 
+## Installation
+
+```
+npm install xinq --save 
+```
+
+## Require
+
+``` js
+var xinq = require('xinq').init();
+```
+
 ## Usage Examples
 
-1.  Checking to see if a string contains another string
+Checking to see if a string contains another string
 
 ``` js
 var teststring = "here we have a nice test string";
@@ -14,7 +27,7 @@ var result = teststring.contains("this");
 console.log(result); 
 ```
 
-2.  Selecting results of an array that match a predicate
+Selecting results of an array that match a predicate
 
 ``` js
 var testarray = ["hello", "this", "is", "a", "nice", "or", "nicely", "done", "test", "array!"];
@@ -22,8 +35,8 @@ var result = testarray.select((n) => n.contains("nice"));
 console.log(result);
 ```
 
-3.  Selecting and filtering results of an object array where 
-    predicate is satisfied.
+Selecting and filtering results of an object array where 
+predicate is satisfied.
 
 ``` js
 var testpeople = [
@@ -39,4 +52,10 @@ var result =    testpeople
                 .where((p) => p.name.contains("ob"));   // where name contains "ob"
 console.log(result);
 ```
+## Contributing
 
+Add unit tests for any new or changed functionality. Lint and test please.
+
+## Release History
+
+* 0.1.0 - Initial Release
