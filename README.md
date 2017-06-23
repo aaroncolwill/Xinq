@@ -8,13 +8,13 @@ Using Xinq can enable you to sort through data sets and filter specific results.
 ## Installation
 
 ```
-npm install xinq --save 
+npm install xinq --save
 ```
 
 ## Require
 
 ``` js
-var xinq = require('xinq').init();
+var xinq = require('xinq').init(); // must call init
 ```
 
 ## Usage Examples
@@ -22,36 +22,37 @@ var xinq = require('xinq').init();
 Checking to see if a string contains another string
 
 ``` js
-var teststring = "here we have a nice test string";
-var result = teststring.contains("this");
-console.log(result); 
+var xinq = require("xinq").init(); // must call init
+var teststring = "this string allows testing of contains";
+var result = teststring.contains("allows");
 ```
 
 Selecting results of an array that match a predicate
 
 ``` js
-var testarray = ["hello", "this", "is", "a", "nice", "or", "nicely", "done", "test", "array!"];
-var result = testarray.select((n) => n.contains("nice"));
-console.log(result);
+var xinq = require("xinq").init(); // must call init
+var stuff = ["cat", "dog", "mouse", "horse", "dragon", "house" ];
+var result = stuff.select((n) => n.contains("ouse"));
 ```
 
 Selecting and filtering results of an object array where 
 predicate is satisfied.
 
 ``` js
-var testpeople = [
-    { name: "bob", age: 21, sex: "male" },
-    { name: "rob", age: 23, sex: "male" },
-    { name: "ann", age: 57, sex: "female" },
-    { name: "sean", age: 44, sex: "male" },
-    { name: "clara", age: 24, sex: "female" },
+var xinq = require("xinq").init(); // must call init
+var staff = 
+[
+    {   name: "alan",     age: 21,    remote: false   },
+    {   name: "allen",    age: 23,    remote: true    },
+    {   name: "ruby",     age: 44,    remote: true    },
+    {   name: "chris",    age: 58,    remote: true    }
 ]
-var result =    testpeople
-                .select((p) => p.sex == "male")         // select only males
-                .where((p) => p.age >= 21)              // filter age over 21
-                .where((p) => p.name.contains("ob"));   // where name contains "ob"
-console.log(result);
+
+var result = staff
+             .select((p) => p.remote)
+             .where((p) => p.age >= 24);
 ```
+
 ## Contributing
 
 Add unit tests for any new or changed functionality. Lint and test please.
